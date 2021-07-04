@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "stdlib.h"
+#include <stdlib.h>
 #include <string.h>
 
 int main(int argc, char **argv) {
@@ -10,7 +10,7 @@ int main(int argc, char **argv) {
 	int i = 0;
 	if (argc == 4) file = fopen(argv[3], "r");
 	else {
-		char *txt;
+		char txt[15];
 		scanf("%s", txt); 
 		file = fopen(txt, "r");
 	}
